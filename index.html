@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form target="_blank" class="registration-form"  action="postreg.html" method="GET" enctype="multipart/form-data">
+        <div class="registration-form__container container">
+            <h1 class="registration-form__title">Create New Customer Account</h1>
+            <div class="registration-form__presonal-information">
+                <h2 class="registration-form__personal-title secondary-title"> Personal Information</h2>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__fname">First Name <span>*</span></label>
+                     <input data-placeholder="" required type="text" pattern="[A-Za-z]{1,32}" 
+                     name="registration-form__fname" 
+                     id="registration-form__fname" 
+                     class="registration-form__fname">
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__lname">Last Name <span>*</span></label>
+                     <input data-placeholder="" required type="text" pattern="[A-Za-z]{1,32}" 
+                     name="registration-form__lname" id="registration-form__lname" 
+                     class="registration-form__lname">
+                </div>
+                <div class="registration-form__newsletter-sign-wrap">
+                     <input type="checkbox"  
+                     name="registration-form__newsletter-sign" 
+                     id="registration-form__newsletter-sign" 
+                     class="registration-form__newsletter-sign">
+                     <label for="newsletter-sign">Sign Up for Newsletter</label>
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__email">Email <span>*</span></label>
+                     <input data-placeholder="" required type="email" 
+                     name="registration-form__email" id="registration-form__email" 
+                     class="registration-form__email">
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__password">Password <span>*</span></label>
+                    <input data-placeholder="1 digit, 1 uppercase letter, min length 8, max length 32" 
+                    required type="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$" 
+                    name="registration-form__password" id="registration-form__password" 
+                    class="registration-form__password">
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__confirm-password">Confirm Password <span>*</span></label>
+                    <input data-placeholder="1 digit, 1 uppercase letter, min length 8, max length 32" 
+                    required type="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$" 
+                    name="registration-form__confirm-password" id="registration-form__confirm-password"
+                    class="registration-form__confirm-password">
+                </div>
+        
+            </div>
+            <h2 class="registration-form__address-title secondary-title">Address Information</h2>
+            <div class="registration-form__address-information">
+                <div class="registration-form__phone-wrap">
+                    <div class="registration-form__country-code-wrap">
+                        <p>Country Code <span>*</span></p>
+                        <select required name="registration-form__country-code"
+                         class="registration-form__country-code" id="registration-form__country-code">
+                            <option value="DZ (+213)">DZ (+213)</option>
+                            <option value="AO (+244)">AO (+244)</option>
+                            <option value="BJ (+229)">BJ (+229)</option>
+                            <option value="BW (+267)">BW (+267)</option>
+                            <option value="BF (+226)">BF (+226)</option>
+                        </select>
+                    </div>
+                    <div class="registration-form__input-wrap phone-wrap">
+                        <label for="registration-form__phone">Phone Number <span>*</span></label>
+                        <input data-placeholder="" required type="tel" 
+                        name="registration-form__phone" pattern="^\d{10}$" 
+                        id="registration-form__phone" class="registration-form__phone">
+                    </div>
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__street-address">Street Address <span>*</span></label>
+                    <input data-placeholder="" required type="text" 
+                    name="registration-form__street-address" 
+                    id="registration-form__street-address"
+                    class="registration-form__street-address">
+                </div>
+                <div class="registration-form__country-wrap select-field-wrap">
+                    <p>Country <span>*</span></p>
+                    <select required name="registration-form__country" 
+                    class="registration-form__country select-field" id="registration-form__country">
+                        <option class="Algeria" value="Algeria" label="Algeria">Algeria</option>
+                        <option class="Angola" value="Angola" label="Angola">Angola</option>
+                        <option class="Benin" value="Benin" label="Benin">Benin</option>
+                        <option class="Botswana" value="Botswana" label="Botswana">Botswana</option>
+                        <option class="Burkina-Faso" value="Burkina-Faso" label="Burkina-Faso">Burkina Faso</option>
+                    </select>
+                </div>
+                <div class="registration-form__city-wrap select-field-wrap">
+                    <p>City <span>*</span></p>
+                    <select required name="registration-form__city" class="registration-form__city select-field" id="registration-form__city">
+                        <optgroup class="Algeria">
+                            <option class="Algeria" value="Algiers" label="Algiers">Algiers</option>
+                            <option class="Algeria" value="Oran" label="Oran">Oran</option>
+                            <option class="Algeria" value="Constantine" label="Constantine">Constantine</option>
+                            <option class="Algeria" value="Batna" label="Batna">Batna</option>
+                            <option class="Algeria" value="Djelfa" label="Djelfa">Djelfa</option>
+                        </optgroup>
+                        <optgroup class="Angola">
+                            <option class="Angola" value="Ambriz" label="Ambriz">Ambriz</option>
+                            <option class="Angola" value="Andulo" label="Andulo">Andulo</option>
+                            <option class="Angola" value="Bailundo" label="Bailundo">Bailundo</option>
+                            <option class="Angola" value="Balombo" label="Balombo">Balombo</option>
+                            <option class="Angola" value="Baía Farta" label="Baía Farta">Baía Farta</option>
+                        </optgroup>
+                        <optgroup class="Benin">
+                            <option class="Benin" value="Cotonou" label="Cotonou">Cotonou</option>
+                            <option class="Benin" value="Porto-Novo" label="Porto-Novo">Porto-Novo</option>
+                            <option class="Benin" value="Parakou" label="Parakou">Parakou</option>
+                            <option class="Benin" value="Djougou" label="Djougou">Djougou</option>
+                            <option class="Benin" value="Bohicon" label="Bohicon">Bohicon</option>
+                        </optgroup>
+                        <optgroup class="Botswana">
+                            <option class="Botswana" value="Gaborone" label="Gaborone">Gaborone</option>
+                            <option class="Botswana" value="Francistown" label="Francistown">Francistown</option>
+                            <option class="Botswana" value="Molepolole" label="Molepolole">Molepolole</option>
+                            <option class="Botswana" value="Serowe" label="Serowe">Serowe</option>
+                            <option class="Botswana" value="Maun" label="Maun">Maun</option>
+                        </optgroup>
+                        <optgroup class="Burkina-Faso">
+                            <option class="Burkina-Faso" value="Aribinda" label="Aribinda">Aribinda</option>
+                            <option class="Burkina-Faso" value="Bagré" label="Bagré">Bagré</option>
+                            <option class="Burkina-Faso" value="Banfora" label="Banfora">Banfora</option>
+                            <option class="Burkina-Faso" value="Batié" label="Batié">Batié</option>
+                            <option class="Burkina-Faso" value="Bogandé" label="Bogandé">Bogandé</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="registration-form__input-wrap">
+                    <label for="registration-form__postal-code">Zip/Postal Code <span>*</span></label>
+                    <input data-placeholder="" required type="tel" 
+                    name="registration-form__postal-code"
+                      pattern="^\d{5}$"  id="registration-form__postal-code" 
+                      class="registration-form__postal-code">
+                </div>
+              
+                <p class="registration-form__required-fields">Required Fields <span>*</span></p>
+                <button type="submit" class="registration-form__submit-btn btn">Create an Account</button>
+            </div>
+    </form>
+   
+
+
+
+    </div>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
