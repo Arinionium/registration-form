@@ -50,6 +50,7 @@ FloatLabel.init();
 const dropdownSwap = (() => {
   
   let cityAll = document.querySelector(".registration-form__city");
+  let countryAll = document.querySelector(".registration-form__country");
   let country = document.querySelector(`[name="registration-form__country"]`);
   let cities = document.querySelectorAll(`[name="registration-form__city"] optgroup`);
   
@@ -59,6 +60,7 @@ const dropdownSwap = (() => {
    
     let thisCity = document.querySelector(`optgroup.${this.value}`);
     cityAll.value = 0;
+    countryAll.value = 0;
       cities.forEach(elem => elem.style.display = "none");
       if (thisCity.style.display === "none") {
         thisCity.style.display = "block";
