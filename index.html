@@ -32,7 +32,7 @@
                      name="registration-form__newsletter-sign" 
                      id="registration-form__newsletter-sign" 
                      class="registration-form__newsletter-sign">
-                     <label for="newsletter-sign">Sign Up for Newsletter</label>
+                     <label for="registration-form__newsletter-sign">Sign Up for Newsletter</label>
                 </div>
                 <div class="registration-form__input-wrap">
                     <label for="registration-form__email">Email <span>*</span></label>
@@ -63,11 +63,11 @@
                         <p>Country Code <span>*</span></p>
                         <select required name="registration-form__country-code"
                          class="registration-form__country-code" id="registration-form__country-code">
-                            <option value="DZ (+213)">DZ (+213)</option>
-                            <option value="AO (+244)">AO (+244)</option>
-                            <option value="BJ (+229)">BJ (+229)</option>
-                            <option value="BW (+267)">BW (+267)</option>
-                            <option value="BF (+226)">BF (+226)</option>
+                            <option value="">DZ (+213)</option>
+                            <option>AO (+244)</option>
+                            <option>BJ (+229)</option>
+                            <option>BW (+267)</option>
+                            <option>BF (+226)</option>
                         </select>
                     </div>
                     <div class="registration-form__input-wrap phone-wrap">
@@ -100,35 +100,35 @@
                     <p>City <span>*</span></p>
                     <select required name="registration-form__city" class="registration-form__city select-field" id="registration-form__city">
                         <option disabled selected value>-- Select your city --</option>
-                        <optgroup class="Algeria">
+                        <optgroup label="Algeria" class="Algeria">
                             <option value="Algiers">Algiers</option>
                             <option value="Oran">Oran</option>
                             <option value="Constantine">Constantine</option>
                             <option value="Batna">Batna</option>
                             <option value="Djelfa">Djelfa</option>
                         </optgroup>
-                        <optgroup class="Angola">
+                        <optgroup label="Angola" class="Angola">
                             <option value="Ambriz">Ambriz</option>
                             <option value="Andulo">Andulo</option>
                             <option value="Bailundo">Bailundo</option>
                             <option value="Balombo">Balombo</option>
                             <option value="Baía Farta">Baía Farta</option>
                         </optgroup>
-                        <optgroup class="Benin">
+                        <optgroup label="Benin" class="Benin">
                             <option value="Cotonou">Cotonou</option>
                             <option value="Porto-Novo">Porto-Novo</option>
                             <option value="Parakou">Parakou</option>
                             <option value="Djougou">Djougou</option>
                             <option value="Bohicon">Bohicon</option>
                         </optgroup>
-                        <optgroup class="Botswana">
+                        <optgroup label="Botswana" class="Botswana">
                             <option value="Gaborone">Gaborone</option>
                             <option value="Francistown">Francistown</option>
                             <option value="Molepolole">Molepolole</option>
                             <option value="Serowe">Serowe</option>
                             <option value="Maun">Maun</option>
                         </optgroup>
-                        <optgroup class="Burkina-Faso">
+                        <optgroup label="Burkina-Faso" class="Burkina-Faso">
                             <option value="Aribinda">Aribinda</option>
                             <option value="Bagré">Bagré</option>
                             <option value="Banfora">Banfora</option>
@@ -148,6 +148,7 @@
                 <p class="registration-form__required-fields">Required Fields <span>*</span></p>
                 <button type="submit" class="registration-form__submit-btn btn">Create an Account</button>
             </div>
+        </div>
     </form>
    
     <script src="js/script.js"></script>
